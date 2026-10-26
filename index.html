@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Healthy Bread Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="top">
+    <a class="logo" href="#top">🌾 Healthy Bread</a>
+    <nav aria-label="Main menu">
+      <a class="burger" href="#menu" aria-label="Open menu">☰</a>
+      <ul id="menu">
+        <li class="close"><a href="#top">✕ Close menu</a></li>
+        <li><a href="#bread">Our Bread</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#points">Points of Sale</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <h1>Bread on Sourdough without Yeast and Chemistry</h1>
+      <p>Baked every night in a small private bakery. Fresh at your door every morning.</p>
+      <a class="cta" href="#bread">View catalog</a>
+    </section>
+
+    <section id="bread" class="products">
+      <h2>Our Bread</h2>
+      <ul class="grid">
+        <li>
+          <article>
+            <h3>🍞 Rye Sourdough</h3>
+            <p>Composition: rye flour, water, sourdough starter, sea salt.</p>
+            <ul>
+              <li>Calories: 210 kcal / 100 g</li>
+              <li>Protein 6 g · Fat 1 g · Carbs 42 g</li>
+            </ul>
+            <p class="price">1 200 ₸</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>🥖 Whole Wheat Loaf</h3>
+            <p>Composition: whole wheat flour, water, sourdough starter, salt, flax seeds.</p>
+            <ul>
+              <li>Calories: 235 kcal / 100 g</li>
+              <li>Protein 9 g · Fat 3 g · Carbs 40 g</li>
+            </ul>
+            <p class="price">1 500 ₸</p>
+          </article>
+        </li>
+        <li>
+          <article>
+            <h3>🌽 Buckwheat Bread</h3>
+            <p>Composition: buckwheat flour, water, sourdough starter, salt, olive oil.</p>
+            <ul>
+              <li>Calories: 190 kcal / 100 g</li>
+              <li>Protein 7 g · Fat 2 g · Carbs 35 g</li>
+            </ul>
+            <p class="price">1 800 ₸</p>
+            <p class="badge">Gluten-Free</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section id="recipes" class="info">
+      <h2>Recipes</h2>
+      <p>Only flour, water, salt and live sourdough. Long fermentation, no yeast, no improvers.</p>
+    </section>
+
+    <section id="points" class="info">
+      <h2>Points of Sale</h2>
+      <p>Bakery shop: Almaty, Abay Ave 10 (daily 7:00–20:00). Farmers market: Green Bazaar, Sat–Sun 8:00–15:00.</p>
+      <p>Want bread at home? <a href="#delivery">Subscribe to morning delivery</a>.</p>
+    </section>
+
+    <section id="delivery" class="delivery">
+      <h2>Morning Delivery Subscription</h2>
+      <form action="#" method="post">
+        <label for="address">Delivery Address</label>
+        <input type="text" id="address" name="address" placeholder="Street, house, apartment" required minlength="5">
+
+        <label for="frequency">Frequency</label>
+        <select id="frequency" name="frequency" required>
+          <option value="" selected disabled>Choose frequency</option>
+          <option>Every day</option>
+          <option>3 times a week</option>
+          <option>Once a week</option>
+        </select>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required minlength="2">
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 700 123 4567" required pattern="\+?[0-9 ]{10,16}">
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="contacts">
+    <input type="checkbox" id="theme-toggle">
+    <label for="theme-toggle" class="theme-switch">🌓 Dark / Light theme</label>
+
+    <nav aria-label="Footer menu">
+      <ul>
+        <li><a href="#bread">Our Bread</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#points">Points of Sale</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#top">Back to top ↑</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2>Legal information</h2>
+      <p>Raw material compliance documents available on request. IE Healthy Bread, Almaty.</p>
+      <p>Tel: +7 700 000 0000 · hello@healthybread.kz</p>
+      <p>© 2026 Healthy Bread Bakery</p>
+    </section>
+  </footer>
+
+</body>
+</html>
